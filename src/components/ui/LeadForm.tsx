@@ -102,7 +102,7 @@ const LeadForm: React.FC = () => {
       await new Promise(resolve => setTimeout(resolve, 1000));
       
       // Construir URL do Typebot com parâmetros
-      const typebotUrl = new URL('https://typebot.co/aplica-es-automatik-labs-e4owx7x');
+      const typebotUrl = new URL('https://typebot.co/ag-ncia-aplica-es-tellcon-systems-1-q4g0pxr');
       
       // Adicionar dados do formulário
       typebotUrl.searchParams.set('name', formData.name);
@@ -246,7 +246,7 @@ const LeadForm: React.FC = () => {
         {/* Informações de segurança */}
         <div className="mt-4 text-center">
           <p className="text-xs text-white/50">
-            Seus dados estão seguros e não serão compartilhados com terceiros.
+            Estamos aderentes à LGPD e seus dados estão seguros e não serão compartilhados com terceiros.
           </p>
         </div>
       </div>
