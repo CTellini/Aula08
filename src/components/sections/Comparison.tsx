@@ -37,61 +37,61 @@ const Comparison: React.FC = () => {
       feature: "Diagnóstico estratégico do negócio antes da automação",
       tools: false,
       freelancers: false,
-      automatik: true
+      tellcon: true
     },
     {
       feature: "Criação de agentes de IA com inteligência e humanização",
       tools: false,
       freelancers: "sometimes",
-      automatik: true
+      tellcon: true
     },
     {
       feature: "Automação 360° de toda a jornada (Marketing, Comercial, Entrega e Pós-venda)",
       tools: false,
       freelancers: "sometimes",
-      automatik: true
+      tellcon: true
     },
     {
       feature: "Suporte consultivo contínuo com especialistas",
       tools: false,
       freelancers: "sometimes",
-      automatik: true
+      tellcon: true
     },
     {
       feature: "Customização profunda para cultura e processos da empresa",
       tools: false,
       freelancers: "sometimes",
-      automatik: true
+      tellcon: true
     },
     {
       feature: "Integração entre diferentes sistemas com IA inteligente",
       tools: "sometimes",
       freelancers: "sometimes",
-      automatik: true
+      tellcon: true
     },
     {
       feature: "Construção de fluxos com visão de crescimento e escala",
       tools: false,
       freelancers: false,
-      automatik: true
+      tellcon: true
     },
     {
       feature: "Acompanhamento e otimização contínua das automações",
       tools: false,
       freelancers: "sometimes",
-      automatik: true
+      tellcon: true
     },
     {
       feature: "Redução de custos e aumento de produtividade como foco principal",
       tools: false,
       freelancers: false,
-      automatik: true
+      tellcon: true
     },
     {
       feature: "Time dedicado e processo validado para garantir resultado",
       tools: false,
       freelancers: false,
-      automatik: true
+      tellcon: true
     }
   ];
 
@@ -138,7 +138,7 @@ const Comparison: React.FC = () => {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-              Por que escolher a <GradientText>Automatik Labs</GradientText>?
+              Por que escolher a <GradientText>Tellcon Systems</GradientText>?
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
               Compare nossa solução completa com alternativas do mercado e entenda por que somos
@@ -167,7 +167,7 @@ const Comparison: React.FC = () => {
                       Freelancers e Autônomos
                     </div>
                     <div className="p-6 text-center font-semibold text-lg">
-                      Automatik Labs
+                      Tellcon Systems
                       <div className="text-sm text-white/60 font-normal">
                         (Nossa Agência)
                       </div>
@@ -190,7 +190,7 @@ const Comparison: React.FC = () => {
                         <StatusIcon status={row.freelancers} />
                       </div>
                       <div className="p-6 flex items-center justify-center">
-                        <StatusIcon status={row.automatik} />
+                        <StatusIcon status={row.tellcon} />
                       </div>
                     </div>
                   ))}
@@ -230,7 +230,7 @@ const Comparison: React.FC = () => {
                     </div>
                     <div className="flex items-center justify-between">
                       <span className="text-sm text-white/70">Automatik Labs:</span>
-                      <StatusIcon status={row.automatik} />
+                      <StatusIcon status={row.tellcon} />
                     </div>
                   </div>
                 )}
