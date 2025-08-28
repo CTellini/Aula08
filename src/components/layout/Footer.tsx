@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <div className="text-center">
           <div className="text-2xl font-display font-bold mb-4">
             <GradientText>Tellcon</GradientText>
-            <span className="ml-1">Labs</span>
+            <span className="ml-1">Systems</span>
           </div>
           <p className="text-white/70 max-w-sm mx-auto">
             Transformando negócios com IA e automação humanizada e gerando resultados reais.
