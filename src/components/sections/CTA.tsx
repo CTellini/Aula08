@@ -101,6 +101,8 @@ const CTA: React.FC = () => {
 };
 
 type BenefitCardProps = {
+                }
+  )
   icon: React.ReactNode;
   title: string;
   description: string;
@@ -124,3 +126,6 @@ const BenefitCard: React.FC<BenefitCardProps> = ({ icon, title, description }) =
 };
 
 export default CTA;
+
+  )
+}

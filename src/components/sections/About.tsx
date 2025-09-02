@@ -82,6 +82,8 @@ const About: React.FC = () => {
 };
 
 type AboutCardProps = {
+            }
+  )
   icon: React.ReactNode;
   title: string;
   description: string;
@@ -105,3 +107,6 @@ const AboutCard: React.FC<AboutCardProps> = ({ icon, title, description }) => {
 };
 
 export default About;
+
+  )
+}
