@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Zap } from 'lucide-react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 
@@ -33,6 +33,14 @@ const Header: React.FC = () => {
       <Container className="flex items-center justify-between">
         <div className="flex items-center">
           <a href="#" className="flex items-center">
+            <div className="flex items-center gap-3">
+              <div className="relative">
+                <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-accent-500 rounded-xl flex items-center justify-center">
+                  <Zap className="w-6 h-6 text-white" />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-br from-primary-500 to-accent-500 rounded-xl blur-lg opacity-50 -z-10" />
+              </div>
+            </div>
             <div className="text-2xl font-display font-bold">
               <GradientText>Tellcon</GradientText>
               <span className="ml-1">Systems</span>
