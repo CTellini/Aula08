@@ -27,7 +27,7 @@ const Header: React.FC = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-dark-900/90 backdrop-blur-md py-3 shadow-lg' : 'bg-transparent py-5'
+        isScrolled ? 'bg-white/95 backdrop-blur-md py-3 shadow-lg border-b border-gray-200' : 'bg-transparent py-5'
       }`}
     >
       <Container className="flex items-center justify-between">
@@ -43,20 +43,20 @@ const Header: React.FC = () => {
             </div>
             <div className="text-2xl font-display font-bold">
               <GradientText>Tellcon</GradientText>
-              <span className="ml-1">Systems</span>
+              <span className={`ml-1 ${isScrolled ? 'text-gray-900' : 'text-white'}`}>Systems</span>
             </div>
           </a>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-10">
-          <a href="#about" className="text-white/80 hover:text-white font-medium transition-colors">
+          <a href="#about" className={`${isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-white/80 hover:text-white'} font-medium transition-colors`}>
             Sobre
           </a>
-          <a href="#services" className="text-white/80 hover:text-white font-medium transition-colors">
+          <a href="#services" className={`${isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-white/80 hover:text-white'} font-medium transition-colors`}>
             Serviços
           </a>
-          <a href="#methodology" className="text-white/80 hover:text-white font-medium transition-colors">
+          <a href="#methodology" className={`${isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-white/80 hover:text-white'} font-medium transition-colors`}>
             Metodologia
           </a>
           <Button 
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-white p-2" 
+          className={`md:hidden p-2 ${isScrolled ? 'text-gray-900' : 'text-white'}`}
           onClick={toggleMenu}
           aria-label="Menu"
         >
@@ -80,25 +80,25 @@ const Header: React.FC = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-dark-900/95 backdrop-blur-md absolute top-full left-0 right-0 border-t border-dark-700/50 animate-fade-in">
+        <div className="md:hidden bg-white/95 backdrop-blur-md absolute top-full left-0 right-0 border-t border-gray-200 animate-fade-in">
           <div className="py-5 px-6 flex flex-col space-y-6">
             <a 
               href="#about" 
-              className="text-white/80 hover:text-white font-medium py-2 transition-colors"
+              className="text-gray-700 hover:text-gray-900 font-medium py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Sobre
             </a>
             <a 
               href="#services" 
-              className="text-white/80 hover:text-white font-medium py-2 transition-colors"
+              className="text-gray-700 hover:text-gray-900 font-medium py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Serviços
             </a>
             <a 
               href="#methodology" 
-              className="text-white/80 hover:text-white font-medium py-2 transition-colors"
+              className="text-gray-700 hover:text-gray-900 font-medium py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Metodologia

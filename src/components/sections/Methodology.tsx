@@ -33,7 +33,7 @@ const Methodology: React.FC = () => {
   return (
     <section id="methodology" className="py-20 md:py-32 relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-dark-900 to-dark-950 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white -z-10" />
       <div className="absolute top-1/2 left-1/4 w-1/2 h-1/2 bg-primary-500/20 rounded-full blur-[96px] -z-10" />
       <div className="absolute bottom-0 right-1/4 w-1/2 h-1/2 bg-accent-500/20 rounded-full blur-[96px] -z-10" />
       
@@ -52,6 +52,7 @@ const Methodology: React.FC = () => {
               Metodologia <GradientText>Automatik</GradientText> — o Caminho para Resultados
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Nossa abordagem proprietária combina diagnóstico profundo, planejamento estratégico 
               e implementação gradual para transformar seu negócio com IA.
             </p>
@@ -114,9 +115,9 @@ const Methodology: React.FC = () => {
             <div className="text-center mt-16">
               <a 
                 href="#apply" 
-                className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-dark-800/50 border border-dark-700/50 hover:border-primary-500/30 transition-all duration-300"
+               className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gray-100 border border-gray-300 hover:border-primary-500/30 transition-all duration-300"
               >
-                <span className="text-white/90 group-hover:text-white transition-colors">
+               <span className="text-gray-700 group-hover:text-gray-900 transition-colors">
                   Conheça mais sobre nossa metodologia
                 </span>
                 <ArrowRight className="w-4 h-4 text-primary-400 group-hover:translate-x-1 transition-transform" />
@@ -142,8 +143,10 @@ const MethodologyStep: React.FC<MethodologyStepProps> = ({ number, icon, title, 
     <div className="group relative">
       <div className="absolute inset-0 bg-gradient-to-b from-primary-500/20 to-accent-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       <div className="relative bg-dark-800/50 backdrop-blur-sm rounded-2xl p-8 border border-dark-700/50 hover:border-primary-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10">
+      <div className="relative bg-white backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:border-primary-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10">
         {/* Step number */}
         <div className="absolute -top-4 -right-4 w-8 h-8 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 flex items-center justify-center text-sm font-bold">
+        <div className="absolute -top-4 -right-4 w-8 h-8 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 flex items-center justify-center text-sm font-bold text-white">
           {number}
         </div>
         
@@ -156,12 +159,12 @@ const MethodologyStep: React.FC<MethodologyStepProps> = ({ number, icon, title, 
         
         {/* Content */}
         <h3 className="text-xl font-bold mb-3">{title}</h3>
-        <p className="text-white/70 mb-6">{description}</p>
+        <p className="text-gray-600 mb-6">{description}</p>
         
         {/* Features */}
         <ul className="space-y-2">
           {features.map((feature, index) => (
-            <li key={index} className="flex items-center gap-2 text-sm text-white/60">
+            <li key={index} className="flex items-center gap-2 text-sm text-gray-500">
               <div className="w-1.5 h-1.5 rounded-full bg-primary-400" />
               {feature}
             </li>

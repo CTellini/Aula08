@@ -122,7 +122,7 @@ const Comparison: React.FC = () => {
   return (
     <section className="py-20 md:py-32 relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-dark-900 to-dark-950 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50 -z-10" />
       <div className="absolute top-1/2 left-1/4 w-1/2 h-1/2 bg-primary-500/20 rounded-full blur-[96px] -z-10" />
       <div className="absolute bottom-0 right-1/4 w-1/2 h-1/2 bg-accent-500/20 rounded-full blur-[96px] -z-10" />
       
@@ -141,6 +141,7 @@ const Comparison: React.FC = () => {
               Por que escolher a <GradientText>Tellcon Systems</GradientText>?
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Compare nossa solução completa com alternativas do mercado e entenda por que somos
               a escolha ideal para transformar seu negócio.
             </p>
@@ -151,15 +152,15 @@ const Comparison: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-primary-500/20 to-accent-500/20 rounded-2xl blur-xl opacity-75" />
             <div className="relative overflow-x-auto">
               <div className="min-w-[768px]">
-                <div className="bg-dark-800/50 backdrop-blur-sm rounded-2xl border border-dark-700/50">
+                <div className="bg-white backdrop-blur-sm rounded-2xl border border-gray-200">
                   {/* Table Header */}
-                  <div className="grid grid-cols-4 border-b border-dark-700/50">
+                  <div className="grid grid-cols-4 border-b border-gray-200">
                     <div className="p-6 font-semibold text-lg">
                       Recursos e Diferenciais
                     </div>
                     <div className="p-6 text-center font-semibold text-lg">
                       Ferramentas Avulsas
-                      <div className="text-sm text-white/60 font-normal">
+                      <div className="text-sm text-gray-500 font-normal">
                         (Zapier, Make, n8n)
                       </div>
                     </div>
@@ -168,7 +169,7 @@ const Comparison: React.FC = () => {
                     </div>
                     <div className="p-6 text-center font-semibold text-lg">
                       Tellcon Systems
-                      <div className="text-sm text-white/60 font-normal">
+                      <div className="text-sm text-gray-500 font-normal">
                         (Nossa Agência)
                       </div>
                     </div>
@@ -178,7 +179,7 @@ const Comparison: React.FC = () => {
                   {comparisonData.map((row, index) => (
                     <div 
                       key={index}
-                      className="grid grid-cols-4 border-b border-dark-700/50 last:border-0 group hover:bg-dark-800/30 transition-colors"
+                      className="grid grid-cols-4 border-b border-gray-200 last:border-0 group hover:bg-gray-50 transition-colors"
                     >
                       <div className="p-6 flex items-center">
                         {row.feature}
@@ -204,7 +205,7 @@ const Comparison: React.FC = () => {
             {comparisonData.map((row, index) => (
               <div
                 key={index}
-                className="bg-dark-800/50 backdrop-blur-sm rounded-xl border border-dark-700/50 overflow-hidden"
+               className="bg-white backdrop-blur-sm rounded-xl border border-gray-200 overflow-hidden"
               >
                 <button
                   className="w-full p-4 flex items-center justify-between text-left"
@@ -219,17 +220,17 @@ const Comparison: React.FC = () => {
                 </button>
                 
                 {expandedCard === index && (
-                  <div className="px-4 pb-4 space-y-3 border-t border-dark-700/50 pt-4">
+                  <div className="px-4 pb-4 space-y-3 border-t border-gray-200 pt-4">
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-white/70">Ferramentas Avulsas:</span>
+                      <span className="text-sm text-gray-600">Ferramentas Avulsas:</span>
                       <StatusIcon status={row.tools} />
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-white/70">Freelancers:</span>
+                      <span className="text-sm text-gray-600">Freelancers:</span>
                       <StatusIcon status={row.freelancers} />
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-white/70">Automatik Labs:</span>
+                      <span className="text-sm text-gray-600">Tellcon Systems:</span>
                       <StatusIcon status={row.tellcon} />
                     </div>
                   </div>

@@ -33,7 +33,7 @@ const About: React.FC = () => {
   return (
     <section id="about" className="py-20 md:py-32 relative">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-dark-950 to-dark-900 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white -z-10" />
       <div className="absolute top-1/2 left-1/4 w-1/2 h-1/2 bg-primary-500/20 rounded-full blur-[96px] -z-10" />
       <div className="absolute bottom-0 right-1/4 w-1/2 h-1/2 bg-accent-500/20 rounded-full blur-[96px] -z-10" />
       
@@ -52,6 +52,7 @@ const About: React.FC = () => {
               Somos especialistas em <GradientText>IA aplicada</GradientText> para resultados reais
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               A Tellcon Systems é referência em agentes de IA humanizados e soluções de automação sob medida 
               para negócios que buscam eficiência operacional, aumento de receita e redução de custos.
             </p>
@@ -91,11 +92,13 @@ const AboutCard: React.FC<AboutCardProps> = ({ icon, title, description }) => {
     <div className="group relative">
       <div className="absolute inset-0 bg-gradient-to-b from-primary-500/20 to-accent-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       <div className="relative bg-dark-800/50 backdrop-blur-sm border border-dark-700/50 rounded-2xl p-8 hover:border-primary-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/10">
+      <div className="relative bg-white backdrop-blur-sm border border-gray-200 rounded-2xl p-8 hover:border-primary-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/10">
         <div className="bg-gradient-to-br from-dark-800 to-dark-900 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+        <div className="bg-gradient-to-br from-gray-100 to-gray-200 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
           {icon}
         </div>
         <h3 className="text-xl font-bold mb-3">{title}</h3>
-        <p className="text-white/70">{description}</p>
+        <p className="text-gray-600">{description}</p>
       </div>
     </div>
   );

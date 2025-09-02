@@ -209,7 +209,7 @@ const Projects: React.FC = () => {
 
   return (
     <section className="py-20 md:py-32 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-dark-900 to-dark-950 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50 -z-10" />
       <div className="absolute top-1/2 left-1/4 w-1/2 h-1/2 bg-primary-500/20 rounded-full blur-[96px] -z-10" />
       <div className="absolute bottom-0 right-1/4 w-1/2 h-1/2 bg-accent-500/20 rounded-full blur-[96px] -z-10" />
 
@@ -228,6 +228,7 @@ const Projects: React.FC = () => {
               Transformando negócios com <GradientText>IA sob medida</GradientText>
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Conheça alguns dos nossos casos de sucesso em diferentes segmentos e como
               estamos revolucionando o mercado com soluções de IA personalizadas.
             </p>
@@ -243,6 +244,7 @@ const Projects: React.FC = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-b from-primary-500/20 to-accent-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative bg-dark-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-dark-700/50 hover:border-primary-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10 h-full">
+                <div className="relative bg-white backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-200 hover:border-primary-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10 h-full">
                   <div className="h-[400px] sm:h-[450px] md:h-[400px] lg:h-[450px] xl:h-[500px] relative overflow-hidden">
                     <img
                       src={project.image}
@@ -250,13 +252,13 @@ const Projects: React.FC = () => {
                       className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-dark-900/90 via-dark-900/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300" />
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-2 group-hover:text-primary-400 transition-colors">
                       {project.title}
                     </h3>
-                    <p className="text-white/70 mb-4">{project.description}</p>
+                    <p className="text-gray-600 mb-4">{project.description}</p>
                     <button
                       onClick={() => handleOpenModal(project)}
                       className="inline-flex items-center gap-2 text-primary-400 hover:text-accent-400 transition-colors group/link"

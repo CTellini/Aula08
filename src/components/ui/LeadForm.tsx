@@ -133,7 +133,7 @@ const LeadForm: React.FC = () => {
             <User className="w-6 h-6 text-primary-400" />
           </div>
           <h3 className="text-xl font-bold mb-2">Vamos começar!</h3>
-          <p className="text-white/70 text-sm">
+          <p className="text-gray-600 text-sm">
             Preencha seus dados para receber uma proposta personalizada
           </p>
         </div>
@@ -141,22 +141,22 @@ const LeadForm: React.FC = () => {
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Campo Nome */}
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-white/90 mb-1.5">
+            <label htmlFor="name" className="block text-sm font-medium text-gray-900 mb-1.5">
               Nome completo *
             </label>
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <User className="h-4 w-4 text-white/50" />
+                <User className="h-4 w-4 text-gray-400" />
               </div>
               <input
                 type="text"
                 id="name"
                 value={formData.name}
                 onChange={(e) => handleInputChange('name', e.target.value)}
-                className={`w-full pl-9 pr-3 py-3 bg-white/10 border rounded-lg text-white text-sm placeholder:text-white/60 focus:outline-none focus:ring-2 transition-all duration-300 ${
+                className={`w-full pl-9 pr-3 py-3 bg-gray-50 border rounded-lg text-gray-900 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 transition-all duration-300 ${
                   errors.name 
                     ? 'border-red-500 focus:ring-red-500/50' 
-                    : 'border-white/20 focus:border-primary-500/50 focus:ring-primary-500/20'
+                    : 'border-gray-300 focus:border-primary-500/50 focus:ring-primary-500/20'
                 }`}
                 placeholder="Digite seu nome completo"
                 disabled={isSubmitting}
@@ -169,22 +169,22 @@ const LeadForm: React.FC = () => {
 
           {/* Campo E-mail */}
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-white/90 mb-1.5">
+            <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-1.5">
               E-mail *
             </label>
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <Mail className="h-4 w-4 text-white/50" />
+                <Mail className="h-4 w-4 text-gray-400" />
               </div>
               <input
                 type="email"
                 id="email"
                 value={formData.email}
                 onChange={(e) => handleInputChange('email', e.target.value)}
-                className={`w-full pl-9 pr-3 py-3 bg-white/10 border rounded-lg text-white text-sm placeholder:text-white/60 focus:outline-none focus:ring-2 transition-all duration-300 ${
+                className={`w-full pl-9 pr-3 py-3 bg-gray-50 border rounded-lg text-gray-900 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 transition-all duration-300 ${
                   errors.email 
                     ? 'border-red-500 focus:ring-red-500/50' 
-                    : 'border-white/20 focus:border-primary-500/50 focus:ring-primary-500/20'
+                    : 'border-gray-300 focus:border-primary-500/50 focus:ring-primary-500/20'
                 }`}
                 placeholder="seu@email.com"
                 disabled={isSubmitting}
@@ -197,22 +197,22 @@ const LeadForm: React.FC = () => {
 
           {/* Campo Telefone */}
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-white/90 mb-1.5">
+            <label htmlFor="phone" className="block text-sm font-medium text-gray-900 mb-1.5">
               Telefone/WhatsApp *
             </label>
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <Phone className="h-4 w-4 text-white/50" />
+                <Phone className="h-4 w-4 text-gray-400" />
               </div>
               <input
                 type="tel"
                 id="phone"
                 value={formData.phone}
                 onChange={(e) => handlePhoneChange(e.target.value)}
-                className={`w-full pl-9 pr-3 py-3 bg-white/10 border rounded-lg text-white text-sm placeholder:text-white/60 focus:outline-none focus:ring-2 transition-all duration-300 ${
+                className={`w-full pl-9 pr-3 py-3 bg-gray-50 border rounded-lg text-gray-900 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 transition-all duration-300 ${
                   errors.phone 
                     ? 'border-red-500 focus:ring-red-500/50' 
-                    : 'border-white/20 focus:border-primary-500/50 focus:ring-primary-500/20'
+                    : 'border-gray-300 focus:border-primary-500/50 focus:ring-primary-500/20'
                 }`}
                 placeholder="(11) 99999-9999"
                 disabled={isSubmitting}
@@ -245,7 +245,7 @@ const LeadForm: React.FC = () => {
 
         {/* Informações de segurança */}
         <div className="mt-4 text-center">
-          <p className="text-xs text-white/50">
+          <p className="text-xs text-gray-500">
             Estamos aderentes à LGPD e seus dados estão seguros e não serão compartilhados com terceiros.
           </p>
         </div>

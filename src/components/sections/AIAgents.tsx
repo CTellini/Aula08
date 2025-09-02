@@ -91,7 +91,7 @@ const AIAgents: React.FC = () => {
   return (
     <section className="py-20 md:py-32 relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-dark-900 to-dark-950 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white -z-10" />
       <div className="absolute top-1/2 left-1/4 w-1/2 h-1/2 bg-primary-500/20 rounded-full blur-[96px] -z-10" />
       <div className="absolute bottom-0 right-1/4 w-1/2 h-1/2 bg-accent-500/20 rounded-full blur-[96px] -z-10" />
       
@@ -112,6 +112,7 @@ const AIAgents: React.FC = () => {
                 Agentes de IA que <GradientText>Pensam e Agem</GradientText> Como Humanos
               </h2>
               <p className="text-xl text-white/80 mb-8">
+              <p className="text-xl text-gray-600 mb-8">
                 Desenvolvemos agentes de IA com uma camada exclusiva de humanização, 
                 capazes de interagir com seus clientes e colaboradores de forma natural e empática.
               </p>
@@ -141,9 +142,9 @@ const AIAgents: React.FC = () => {
               
               <a 
                 href="#apply" 
-                className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-dark-800/50 border border-dark-700/50 hover:border-primary-500/30 transition-all duration-300"
+                className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gray-100 border border-gray-300 hover:border-primary-500/30 transition-all duration-300"
               >
-                <span className="text-white/90 group-hover:text-white transition-colors">
+                <span className="text-gray-700 group-hover:text-gray-900 transition-colors">
                   Conheça mais sobre nossos agentes
                 </span>
                 <ArrowRight className="w-4 h-4 text-primary-400 group-hover:translate-x-1 transition-transform" />
@@ -152,25 +153,26 @@ const AIAgents: React.FC = () => {
             
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-b from-primary-500/20 to-accent-500/20 rounded-2xl blur-xl opacity-75" />
-              <div className="relative bg-dark-800/50 backdrop-blur-sm rounded-2xl p-1 border border-dark-700/50 hover:border-primary-500/30 transition-all duration-500 hover:shadow-xl hover:shadow-primary-500/10">
+              <div className="relative bg-white backdrop-blur-sm rounded-2xl p-1 border border-gray-200 hover:border-primary-500/30 transition-all duration-500 hover:shadow-xl hover:shadow-primary-500/10">
                 <div className="relative rounded-xl overflow-hidden">
                   <img 
                     src="https://images.pexels.com/photos/8438969/pexels-photo-8438969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
                     alt="AI agent visualization" 
                     className="w-full h-[400px] md:h-[500px] object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-dark-900/90 via-dark-900/50 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/50 to-transparent"></div>
                   
                   {/* Chat interface */}
                   <div className="absolute bottom-8 left-8 right-8">
-                    <div className="bg-dark-800/90 backdrop-blur-sm rounded-xl p-5 border border-dark-700/50">
+                    <div className="bg-white/95 backdrop-blur-sm rounded-xl p-5 border border-gray-200">
                       <div className="flex items-center gap-3 mb-4">
                         <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center">
                           <BrainCircuit size={18} className="text-white" />
                         </div>
                         <div>
                           <h4 className="font-medium text-white">Assistente IA</h4>
-                          <p className="text-xs text-white/60">Tellcon Systems</p>
+                          <h4 className="font-medium text-gray-900">Assistente IA</h4>
+                          <p className="text-xs text-gray-500">Tellcon Systems</p>
                         </div>
                       </div>
                       <div className="space-y-3">
@@ -181,10 +183,10 @@ const AIAgents: React.FC = () => {
                               className={`${
                                 message.sender === 'ai'
                                   ? 'bg-primary-500/10 border border-primary-500/20'
-                                  : 'bg-dark-700/30 border border-dark-600/20 ml-auto'
+                                  : 'bg-gray-100 border border-gray-300 ml-auto'
                               } p-3 rounded-lg max-w-[80%] animate-fade-in`}
                             >
-                              <p className="text-white/90 text-sm">{message.text}</p>
+                              <p className="text-gray-900 text-sm">{message.text}</p>
                             </div>
                           )
                         ))}
@@ -219,6 +221,7 @@ type FeatureItemProps = {
 const FeatureItem: React.FC<FeatureItemProps> = ({ icon, title, description }) => {
   return (
     <div className="group flex items-start gap-4 p-4 rounded-xl hover:bg-dark-800/50 transition-colors duration-300">
+    <div className="group flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 transition-colors duration-300">
       <div className="bg-gradient-to-br from-primary-500/20 to-accent-500/20 p-2 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
         <div className="text-primary-400 group-hover:text-accent-400 transition-colors">
           {icon}
@@ -226,7 +229,7 @@ const FeatureItem: React.FC<FeatureItemProps> = ({ icon, title, description }) =
       </div>
       <div>
         <h3 className="font-semibold mb-1">{title}</h3>
-        <p className="text-white/70 text-sm">{description}</p>
+        <p className="text-gray-600 text-sm">{description}</p>
       </div>
     </div>
   );

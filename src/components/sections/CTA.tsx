@@ -33,7 +33,7 @@ const CTA: React.FC = () => {
   return (
     <section id="apply" className="py-20 md:py-32 relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-dark-900 to-dark-950 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white -z-10" />
       <div className="absolute top-1/2 left-1/4 w-1/2 h-1/2 bg-primary-500/20 rounded-full blur-[96px] -z-10" />
       <div className="absolute bottom-0 right-1/4 w-1/2 h-1/2 bg-accent-500/20 rounded-full blur-[96px] -z-10" />
       
@@ -54,6 +54,7 @@ const CTA: React.FC = () => {
                 Pronto para transformar seu negócio com <GradientText>IA sob medida?</GradientText>
               </h2>
               <p className="text-xl text-white/80 mb-8">
+              <p className="text-xl text-gray-600 mb-8">
                 Preencha o formulário e vamos entender como podemos levar sua empresa para o próximo nível 
                 com inteligência e automação humanizada.
               </p>
@@ -84,7 +85,7 @@ const CTA: React.FC = () => {
             
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-b from-primary-500/20 to-accent-500/20 rounded-2xl blur-xl opacity-75" />
-              <div className="relative bg-dark-800/50 backdrop-blur-sm rounded-2xl border border-dark-700/50 hover:border-primary-500/30 transition-all duration-500 hover:shadow-xl hover:shadow-primary-500/10">
+              <div className="relative bg-white backdrop-blur-sm rounded-2xl border border-gray-200 hover:border-primary-500/30 transition-all duration-500 hover:shadow-xl hover:shadow-primary-500/10">
                 <iframe
                   src="https://typebot.co/ag-ncia-aplica-es-tellcon-systems-1-q4g0pxr"
                   style={{ border: 'none', width: '100%', height: '600px' }}
@@ -108,6 +109,7 @@ type BenefitCardProps = {
 const BenefitCard: React.FC<BenefitCardProps> = ({ icon, title, description }) => {
   return (
     <div className="group flex items-start gap-4 p-4 rounded-xl hover:bg-dark-800/50 transition-colors duration-300">
+    <div className="group flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 transition-colors duration-300">
       <div className="bg-gradient-to-br from-primary-500/20 to-accent-500/20 p-2 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
         <div className="text-primary-400 group-hover:text-accent-400 transition-colors">
           {icon}
@@ -115,7 +117,7 @@ const BenefitCard: React.FC<BenefitCardProps> = ({ icon, title, description }) =
       </div>
       <div>
         <h3 className="font-semibold mb-1">{title}</h3>
-        <p className="text-white/70 text-sm">{description}</p>
+        <p className="text-gray-600 text-sm">{description}</p>
       </div>
     </div>
   );

@@ -33,7 +33,7 @@ const Services: React.FC = () => {
   return (
     <section id="services" className="py-20 md:py-32 relative">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-dark-900 to-dark-950 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50 -z-10" />
       <div className="absolute top-1/2 right-1/4 w-1/2 h-1/2 bg-primary-500/20 rounded-full blur-[96px] -z-10" />
       <div className="absolute bottom-0 left-1/4 w-1/2 h-1/2 bg-accent-500/20 rounded-full blur-[96px] -z-10" />
       
@@ -52,6 +52,7 @@ const Services: React.FC = () => {
               Soluções completas de <GradientText>Automação 360°</GradientText>
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Desenvolvemos soluções personalizadas que integram inteligência artificial
               e automação para transformar todas as áreas do seu negócio.
             </p>
@@ -129,6 +130,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, fea
     <div className="group relative">
       <div className="absolute inset-0 bg-gradient-to-b from-primary-500/20 to-accent-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       <div className="relative bg-dark-800/50 backdrop-blur-sm p-8 rounded-2xl border border-dark-700/50 hover:border-primary-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10">
+      <div className="relative bg-white backdrop-blur-sm p-8 rounded-2xl border border-gray-200 hover:border-primary-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10">
         <div className="flex items-start gap-5">
           <div className="bg-gradient-to-br from-primary-500/20 to-accent-500/20 p-4 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
             <div className="text-primary-400 group-hover:text-accent-400 transition-colors">
@@ -137,10 +139,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, fea
           </div>
           <div>
             <h3 className="text-xl font-bold mb-3">{title}</h3>
-            <p className="text-white/70 mb-6">{description}</p>
+            <p className="text-gray-600 mb-6">{description}</p>
             <ul className="space-y-2">
               {features.map((feature, index) => (
-                <li key={index} className="flex items-center gap-2 text-sm text-white/60">
+                <li key={index} className="flex items-center gap-2 text-sm text-gray-500">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary-400" />
                   {feature}
                 </li>
