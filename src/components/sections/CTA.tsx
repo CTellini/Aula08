@@ -101,8 +101,6 @@ const CTA: React.FC = () => {
 };
 
 type BenefitCardProps = {
-                }
-  )
   icon: React.ReactNode;
   title: string;
   description: string;
@@ -111,7 +109,6 @@ type BenefitCardProps = {
 const BenefitCard: React.FC<BenefitCardProps> = ({ icon, title, description }) => {
   return (
     <div className="group flex items-start gap-4 p-4 rounded-xl hover:bg-dark-800/50 transition-colors duration-300">
-    <div className="group flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 transition-colors duration-300">
       <div className="bg-gradient-to-br from-primary-500/20 to-accent-500/20 p-2 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
         <div className="text-primary-400 group-hover:text-accent-400 transition-colors">
           {icon}
@@ -126,6 +123,3 @@ const BenefitCard: React.FC<BenefitCardProps> = ({ icon, title, description }) =
 };
 
 export default CTA;
-
-  )
-}
