@@ -107,6 +107,3 @@ const AboutCard: React.FC<AboutCardProps> = ({ icon, title, description }) => {
 };
 
 export default About;
-
-  )
-}
