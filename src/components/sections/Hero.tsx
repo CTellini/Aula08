@@ -7,7 +7,7 @@ import { ArrowRight, Bot, Brain, Zap } from 'lucide-react';
 
 const benefitItems = [
   "Redução de 70% nos custos operacionais",
-  "Aumento de 45% na satisfação do cliente",
+  "Aumento de 65% na satisfação do cliente",
   "Automação de 85% das tarefas repetitivas",
   "ROI positivo em 3 meses",
   "Disponibilidade 24/7",
@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
               onClick={() => window.location.href = '#apply'}
             >
               <span className="flex items-center justify-center gap-2">
-                Começar Agora
+                Contate Agora
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
             </Button>
