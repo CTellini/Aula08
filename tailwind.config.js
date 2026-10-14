@@ -4,31 +4,31 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Primary - Azul Elétrico / Cobalto
+        // Tellcon navy
         primary: {
-          '50': '#EAF0FF',
-          '400': '#3A75FF',
-          '500': '#0057FF', // Cor principal
-          '600': '#0047D6',
-          '900': '#002D88',
+          '50': '#EEF3F8',
+          '400': '#1E4A76',
+          '500': '#0B2948',
+          '600': '#071D34',
+          '900': '#041322',
         },
-        // Secondary - Roxo Profundo
+        // Tellcon orange
         secondary: {
-          '400': '#7C3AED',
-          '500': '#4B00B7', // Cor secundária
-          '600': '#3A0094',
+          '400': '#FF7A3D',
+          '500': '#FF5B16',
+          '600': '#D9460B',
         },
-        // Accent - Verde Neon Suave
+        // Orange accents keep the brand mark prominent
         accent: {
-          '400': '#00FFAA',
-          '500': '#00D18C', // Cor de destaque
-          '600': '#00A86B',
+          '400': '#FF8A52',
+          '500': '#FF5B16',
+          '600': '#D9460B',
         },
-        // Dark - Tons escuros profissionais
+        // Deep navy surfaces
         dark: {
-          '800': '#1A1A1A',
-          '900': '#111111',
-          '950': '#0B0B0B',
+          '800': '#123A5C',
+          '900': '#0B2948',
+          '950': '#061A2E',
         },
       },
       fontFamily: {
@@ -51,8 +51,8 @@ export default {
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
         glow: {
-          '0%': { boxShadow: '0 0 5px rgba(0, 87, 255, 0.2)' },
-          '100%': { boxShadow: '0 0 20px rgba(0, 87, 255, 0.5)' },
+          '0%': { boxShadow: '0 0 5px rgba(11, 41, 72, 0.2)' },
+          '100%': { boxShadow: '0 0 20px rgba(255, 91, 22, 0.5)' },
         },
         marquee: {
           '0%': { transform: 'translateX(0)' },

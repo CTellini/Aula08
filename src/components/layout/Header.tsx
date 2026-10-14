@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 
@@ -27,36 +27,29 @@ const Header: React.FC = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md py-3 shadow-lg border-b border-gray-200' : 'bg-transparent py-5'
+        isScrolled ? 'bg-white/95 backdrop-blur-md py-3 shadow-lg border-b border-gray-200' : 'bg-white/95 backdrop-blur-md py-4 border-b border-gray-100'
       }`}
     >
       <Container className="flex items-center justify-between">
         <div className="flex items-center">
-          <a href="#" className="flex items-center">
-            <div className="flex items-center gap-3">
-              <div className="relative">
-                <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-accent-500 rounded-xl flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-white" />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-500 to-accent-500 rounded-xl blur-lg opacity-50 -z-10" />
-              </div>
-            </div>
-            <div className="text-2xl font-display font-bold">
-              <GradientText>Tellcon</GradientText>
-              <span className={`ml-1 ${isScrolled ? 'text-gray-900' : 'text-white'}`}>Systems</span>
-            </div>
+          <a href="#" className="flex items-center" aria-label="Tellcon Systems">
+            <img
+              src="/TBN_Systems.png"
+              alt="Tellcon Systems"
+              className="h-12 w-12 rounded-xl object-cover shadow-sm"
+            />
           </a>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-10">
-          <a href="#about" className={`${isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-white/80 hover:text-white'} font-medium transition-colors`}>
+          <a href="#about" className="text-primary-900 hover:text-secondary-600 font-medium transition-colors">
             Sobre
           </a>
-          <a href="#services" className={`${isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-white/80 hover:text-white'} font-medium transition-colors`}>
+          <a href="#services" className="text-primary-900 hover:text-secondary-600 font-medium transition-colors">
             Serviços
           </a>
-          <a href="#methodology" className={`${isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-white/80 hover:text-white'} font-medium transition-colors`}>
+          <a href="#methodology" className="text-primary-900 hover:text-secondary-600 font-medium transition-colors">
             Metodologia
           </a>
           <Button 
@@ -70,7 +63,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className={`md:hidden p-2 ${isScrolled ? 'text-gray-900' : 'text-white'}`}
+          className="md:hidden p-2 text-primary-900"
           onClick={toggleMenu}
           aria-label="Menu"
         >
@@ -84,21 +77,21 @@ const Header: React.FC = () => {
           <div className="py-5 px-6 flex flex-col space-y-6">
             <a 
               href="#about" 
-              className="text-gray-700 hover:text-gray-900 font-medium py-2 transition-colors"
+              className="text-primary-900 hover:text-secondary-600 font-medium py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Sobre
             </a>
             <a 
               href="#services" 
-              className="text-gray-700 hover:text-gray-900 font-medium py-2 transition-colors"
+              className="text-primary-900 hover:text-secondary-600 font-medium py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Serviços
             </a>
             <a 
               href="#methodology" 
-              className="text-gray-700 hover:text-gray-900 font-medium py-2 transition-colors"
+              className="text-primary-900 hover:text-secondary-600 font-medium py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Metodologia
@@ -117,14 +110,6 @@ const Header: React.FC = () => {
         </div>
       )}
     </header>
-  );
-};
-
-const GradientText = ({ children, className = '' }) => {
-  return (
-    <span className={`bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent ${className}`}>
-      {children}
-    </span>
   );
 };
 

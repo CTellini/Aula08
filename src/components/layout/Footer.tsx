@@ -6,10 +6,11 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-50 border-t border-gray-200 py-16">
       <Container>
         <div className="text-center">
-          <div className="text-2xl font-display font-bold mb-4">
-            <GradientText>Tellcon</GradientText>
-            <span className="ml-1 text-gray-900">Systems</span>
-          </div>
+          <img
+            src="/TBN_Systems.png"
+            alt="Tellcon Systems"
+            className="mx-auto mb-4 h-20 w-20 rounded-2xl object-cover shadow-sm"
+          />
           <p className="text-gray-600 max-w-sm mx-auto">
             Transformando negócios com IA e automação humanizada e gerando resultados reais.
           </p>
@@ -22,14 +23,6 @@ const Footer: React.FC = () => {
         </div>
       </Container>
     </footer>
-  );
-};
-
-const GradientText = ({ children, className = '' }) => {
-  return (
-    <span className={`bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent ${className}`}>
-      {children}
-    </span>
   );
 };
 
