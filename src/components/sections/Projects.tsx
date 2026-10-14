@@ -89,12 +89,12 @@ const projects: Project[] = [
     description: "Assistente virtual inteligente para automação de processos e atendimento",
     image: "/Criando um Super Roboo Assistente.png",
     details: {
-      overview: "O James Faz Tudo é um super agente criado em n8n, que entende texto, imagem e voz — e pode fazer demonstrações automáticas do seu trabalho de automação para impressionar leads e fechar contratos com mais facilidade.",
+      overview: "O Assistente Virtual é um super agente criado em n8n, que entende texto, imagem e voz — e pode fazer demonstrações automáticas do seu trabalho de automação para impressionar leads e fechar contratos com mais facilidade.",
       features: [
         "Mostra na prática como sua automação funciona",
         "Gera provas sociais para conquistar clientes",
         "Usa IA para entender as dores do lead e responder com eficiência",
-        "Conexões prontas para WhatsApp, Google Calendar, Gmail e muito mais"
+        "Conexões prontas para WhatsApp, Instagram, Facebook, Google Calendar, Gmail, Outlook e muito mais"
       ],
       benefits: [
         "Demonstrações automáticas impressionantes",
@@ -105,7 +105,8 @@ const projects: Project[] = [
       integrations: [
         "WhatsApp Business",
         "Google Workspace",
-        "CRM",
+        "Aplicativos Microsoft",
+        "ERP/CRM",
         "Ferramentas de Automação"
       ]
     }
@@ -156,7 +157,7 @@ const projects: Project[] = [
       ],
       integrations: [
         "Sistema de Telefonia",
-        "CRM",
+        "ERP/CRM",
         "Calendários",
         "Ferramentas de Vendas"
       ]
