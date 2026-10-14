@@ -64,7 +64,7 @@ const Header: React.FC = () => {
             className="ml-4"
             onClick={() => window.location.href = '#apply'}
           >
-            Aplicar Agora
+            Contate Agora
           </Button>
         </nav>
 
@@ -111,7 +111,7 @@ const Header: React.FC = () => {
                 setIsMenuOpen(false);
               }}
             >
-              Aplicar Agora
+              Contate Agora
             </Button>
           </div>
         </div>
