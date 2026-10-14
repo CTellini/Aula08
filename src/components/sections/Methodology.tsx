@@ -49,11 +49,11 @@ const Methodology: React.FC = () => {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-              Metodologia <GradientText>Automatik</GradientText> — o Caminho para Resultados
+              Metodologia <GradientText>TELLCON SYSTEMS</GradientText> — o caminho certo para resultados concretos
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              Nossa abordagem proprietária combina diagnóstico profundo, planejamento estratégico 
-              e implementação gradual para transformar seu negócio com IA.
+              A metodologia Tellcon SYStems combina diagnósticos profundos, planejamento estratégico 
+              e implementação gradual para transformar seu negócio com resultados reais com IA.
             </p>
           </div>
           
@@ -117,7 +117,7 @@ const Methodology: React.FC = () => {
                 className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-dark-800/50 border border-dark-700/50 hover:border-primary-500/30 transition-all duration-300"
               >
                 <span className="text-white/90 group-hover:text-white transition-colors">
-                  Conheça mais sobre nossa metodologia
+                  Conheça mais sobre a metodologia TELLCON SYSTEMS
                 </span>
                 <ArrowRight className="w-4 h-4 text-primary-400 group-hover:translate-x-1 transition-transform" />
               </a>
