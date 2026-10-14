@@ -129,7 +129,7 @@ const LeadForm: React.FC = () => {
     <div className="w-full h-[600px] flex items-center justify-center p-4 md:p-6">
       <div className="w-full max-w-sm">
         <div className="text-center mb-6">
-          <div className="w-12 h-12 bg-gradient-to-br from-primary-500/20 to-accent-500/20 rounded-xl flex items-center justify-center mx-auto mb-3">
+          <div className="w-12 h-12 bg-primary-500/20 rounded-xl flex items-center justify-center mx-auto mb-3">
             <User className="w-6 h-6 text-primary-400" />
           </div>
           <h3 className="text-xl font-bold mb-2">Vamos começar!</h3>
@@ -227,7 +227,7 @@ const LeadForm: React.FC = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-400 hover:to-primary-500 disabled:from-primary-600 disabled:to-primary-700 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group disabled:cursor-not-allowed mt-6"
+            className="w-full bg-primary-500 hover:bg-primary-400 disabled:bg-primary-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group disabled:cursor-not-allowed mt-6"
           >
             {isSubmitting ? (
               <>

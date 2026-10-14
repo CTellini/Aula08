@@ -91,7 +91,7 @@ const AIAgents: React.FC = () => {
   return (
     <section className="py-20 md:py-32 relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-dark-900 to-dark-950 -z-10" />
+      <div className="absolute inset-0 bg-dark-900 -z-10" />
       <div className="absolute top-1/2 left-1/4 w-1/2 h-1/2 bg-primary-500/20 rounded-full blur-[96px] -z-10" />
       <div className="absolute bottom-0 right-1/4 w-1/2 h-1/2 bg-accent-500/20 rounded-full blur-[96px] -z-10" />
       
@@ -102,8 +102,8 @@ const AIAgents: React.FC = () => {
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-500/10 to-accent-500/10 border border-primary-500/20 mb-8">
-                <span className="text-sm font-medium bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-500/10 border border-primary-500/20 mb-8">
+                <span className="text-sm font-medium text-accent-400">
                   Agentes Inteligentes
                 </span>
               </div>
@@ -151,7 +151,7 @@ const AIAgents: React.FC = () => {
             </div>
             
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-b from-primary-500/20 to-accent-500/20 rounded-2xl blur-xl opacity-75" />
+              <div className="absolute inset-0 bg-accent-500/20 rounded-2xl blur-xl opacity-75" />
               <div className="relative bg-dark-800/50 backdrop-blur-sm rounded-2xl p-1 border border-dark-700/50 hover:border-primary-500/30 transition-all duration-500 hover:shadow-xl hover:shadow-primary-500/10">
                 <div className="relative rounded-xl overflow-hidden">
                   <img 
@@ -159,13 +159,13 @@ const AIAgents: React.FC = () => {
                     alt="AI agent visualization" 
                     className="w-full h-[400px] md:h-[500px] object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-dark-900/90 via-dark-900/50 to-transparent"></div>
+                  <div className="absolute inset-0 bg-dark-900/70"></div>
                   
                   {/* Chat interface */}
                   <div className="absolute bottom-8 left-8 right-8">
                     <div className="bg-dark-800/90 backdrop-blur-sm rounded-xl p-5 border border-dark-700/50">
                       <div className="flex items-center gap-3 mb-4">
-                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center">
+                        <div className="w-10 h-10 rounded-full bg-secondary-500 flex items-center justify-center">
                           <BrainCircuit size={18} className="text-white" />
                         </div>
                         <div>
@@ -219,7 +219,7 @@ type FeatureItemProps = {
 const FeatureItem: React.FC<FeatureItemProps> = ({ icon, title, description }) => {
   return (
     <div className="group flex items-start gap-4 p-4 rounded-xl hover:bg-dark-800/50 transition-colors duration-300">
-      <div className="bg-gradient-to-br from-primary-500/20 to-accent-500/20 p-2 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+      <div className="bg-primary-500/20 p-2 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
         <div className="text-primary-400 group-hover:text-accent-400 transition-colors">
           {icon}
         </div>

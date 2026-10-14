@@ -33,7 +33,7 @@ const About: React.FC = () => {
   return (
     <section id="about" className="py-20 md:py-32 relative">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white -z-10" />
+      <div className="absolute inset-0 bg-gray-50 -z-10" />
       <div className="absolute top-1/2 left-1/4 w-1/2 h-1/2 bg-primary-500/20 rounded-full blur-[96px] -z-10" />
       <div className="absolute bottom-0 right-1/4 w-1/2 h-1/2 bg-accent-500/20 rounded-full blur-[96px] -z-10" />
       
@@ -43,8 +43,8 @@ const About: React.FC = () => {
           className="max-w-4xl mx-auto opacity-0 translate-y-10 transition-all duration-1000 ease-out"
         >
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-500/10 to-accent-500/10 border border-primary-500/20 mb-8">
-              <span className="text-sm font-medium bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-500/10 border border-primary-500/20 mb-8">
+              <span className="text-sm font-medium text-accent-400">
                 Sobre nós
               </span>
             </div>
@@ -89,9 +89,9 @@ type AboutCardProps = {
 const AboutCard: React.FC<AboutCardProps> = ({ icon, title, description }) => {
   return (
     <div className="group relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-primary-500/20 to-accent-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      <div className="absolute inset-0 bg-accent-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       <div className="relative bg-white backdrop-blur-sm border border-gray-200 rounded-2xl p-8 hover:border-primary-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/10">
-        <div className="bg-gradient-to-br from-gray-100 to-gray-200 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+        <div className="bg-gray-100 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
           {icon}
         </div>
         <h3 className="text-xl font-bold mb-3">{title}</h3>

@@ -33,7 +33,7 @@ const Services: React.FC = () => {
   return (
     <section id="services" className="py-20 md:py-32 relative">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-dark-900 to-dark-950 -z-10" />
+      <div className="absolute inset-0 bg-dark-900 -z-10" />
       <div className="absolute top-1/2 right-1/4 w-1/2 h-1/2 bg-primary-500/20 rounded-full blur-[96px] -z-10" />
       <div className="absolute bottom-0 left-1/4 w-1/2 h-1/2 bg-accent-500/20 rounded-full blur-[96px] -z-10" />
       
@@ -43,8 +43,8 @@ const Services: React.FC = () => {
           className="opacity-0 translate-y-10 transition-all duration-1000 ease-out"
         >
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-500/10 to-accent-500/10 border border-primary-500/20 mb-8">
-              <span className="text-sm font-medium bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-500/10 border border-primary-500/20 mb-8">
+              <span className="text-sm font-medium text-accent-400">
                 Nossas Soluções
               </span>
             </div>
@@ -127,10 +127,10 @@ type ServiceCardProps = {
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, features }) => {
   return (
     <div className="group relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-primary-500/20 to-accent-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      <div className="absolute inset-0 bg-accent-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       <div className="relative bg-dark-800/50 backdrop-blur-sm p-8 rounded-2xl border border-dark-700/50 hover:border-primary-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10">
         <div className="flex items-start gap-5">
-          <div className="bg-gradient-to-br from-primary-500/20 to-accent-500/20 p-4 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+          <div className="bg-primary-500/20 p-4 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
             <div className="text-primary-400 group-hover:text-accent-400 transition-colors">
               {icon}
             </div>

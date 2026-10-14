@@ -39,8 +39,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, title }) => {
       <div className="relative min-h-screen md:flex md:items-center md:justify-center md:p-4">
         {/* Modal */}
         <div className="relative w-full md:max-w-4xl bg-white md:rounded-2xl shadow-xl">
-          {/* Gradient border */}
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 md:rounded-2xl opacity-20" />
+          {/* Brand border */}
+          <div className="absolute inset-0 bg-primary-500 md:rounded-2xl opacity-20" />
           
           <div className="relative flex flex-col max-h-screen md:max-h-[90vh]">
             {/* Header */}

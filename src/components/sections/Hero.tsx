@@ -47,12 +47,12 @@ const Hero: React.FC = () => {
     <section className="pt-32 pb-20 md:pt-40 md:pb-32 relative overflow-hidden">
       <Container>
         <div ref={heroRef} className="max-w-5xl mx-auto text-center opacity-0 translate-y-10 transition-all duration-1000 ease-out">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-500/10 to-accent-500/10 border border-primary-500/20 mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-500/10 border border-primary-500/20 mb-8">
             <span className="relative flex h-3 w-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-500 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-primary-500"></span>
             </span>
-            <span className="text-sm font-medium bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+            <span className="text-sm font-medium text-accent-400">
               Tecnologia de ponta em IA
             </span>
           </div>

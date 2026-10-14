@@ -59,10 +59,6 @@ export default {
           '100%': { transform: 'translateX(-100%)' },
         }
       },
-      backgroundImage: {
-        'gradient-hero': 'linear-gradient(to bottom right, var(--tw-gradient-stops))',
-        'gradient-card': 'linear-gradient(to bottom right, var(--tw-gradient-stops))',
-      },
     },
   },
   plugins: [],

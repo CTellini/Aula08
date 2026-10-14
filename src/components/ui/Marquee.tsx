@@ -23,8 +23,8 @@ const Marquee: React.FC<MarqueeProps> = ({
   return (
     <div className="relative flex overflow-hidden bg-gray-100 backdrop-blur-sm border-y border-gray-200">
       {/* Gradient Edges */}
-      <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10" />
-      <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10" />
+      <div className="absolute left-0 top-0 bottom-0 w-20 bg-white z-10" />
+      <div className="absolute right-0 top-0 bottom-0 w-20 bg-white z-10" />
       
       {/* First set of items */}
       <div 

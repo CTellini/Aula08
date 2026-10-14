@@ -11,13 +11,13 @@ const GradientText: React.FC<GradientTextProps> = ({
   className = '',
   variant = 'primary'
 }) => {
-  const gradients = {
-    primary: 'from-primary-400 via-primary-500 to-accent-400',
-    secondary: 'from-secondary-400 via-secondary-500 to-accent-400'
+  const colors = {
+    primary: 'text-accent-500',
+    secondary: 'text-secondary-500'
   };
 
   return (
-    <span className={`bg-gradient-to-r ${gradients[variant]} bg-clip-text text-transparent ${className}`}>
+    <span className={`${colors[variant]} ${className}`}>
       {children}
     </span>
   );

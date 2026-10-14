@@ -122,7 +122,7 @@ const Comparison: React.FC = () => {
   return (
     <section className="py-20 md:py-32 relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-dark-900 to-dark-950 -z-10" />
+      <div className="absolute inset-0 bg-dark-900 -z-10" />
       <div className="absolute top-1/2 left-1/4 w-1/2 h-1/2 bg-primary-500/20 rounded-full blur-[96px] -z-10" />
       <div className="absolute bottom-0 right-1/4 w-1/2 h-1/2 bg-accent-500/20 rounded-full blur-[96px] -z-10" />
       
@@ -132,8 +132,8 @@ const Comparison: React.FC = () => {
           className="opacity-0 translate-y-10 transition-all duration-1000 ease-out"
         >
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-500/10 to-accent-500/10 border border-primary-500/20 mb-8">
-              <span className="text-sm font-medium bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-500/10 border border-primary-500/20 mb-8">
+              <span className="text-sm font-medium text-accent-400">
                 Comparativo
               </span>
             </div>
@@ -148,7 +148,7 @@ const Comparison: React.FC = () => {
 
           {/* Desktop Table (hidden on mobile) */}
           <div className="relative hidden md:block">
-            <div className="absolute inset-0 bg-gradient-to-b from-primary-500/20 to-accent-500/20 rounded-2xl blur-xl opacity-75" />
+            <div className="absolute inset-0 bg-accent-500/20 rounded-2xl blur-xl opacity-75" />
             <div className="relative overflow-x-auto">
               <div className="min-w-[768px]">
                 <div className="bg-dark-800/50 backdrop-blur-sm rounded-2xl border border-dark-700/50">

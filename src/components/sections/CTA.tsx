@@ -33,7 +33,7 @@ const CTA: React.FC = () => {
   return (
     <section id="apply" className="py-20 md:py-32 relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white -z-10" />
+      <div className="absolute inset-0 bg-gray-50 -z-10" />
       <div className="absolute top-1/2 left-1/4 w-1/2 h-1/2 bg-primary-500/20 rounded-full blur-[96px] -z-10" />
       <div className="absolute bottom-0 right-1/4 w-1/2 h-1/2 bg-accent-500/20 rounded-full blur-[96px] -z-10" />
       
@@ -44,8 +44,8 @@ const CTA: React.FC = () => {
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-500/10 to-accent-500/10 border border-primary-500/20 mb-8">
-                <span className="text-sm font-medium bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-500/10 border border-primary-500/20 mb-8">
+                <span className="text-sm font-medium text-accent-400">
                   Comece Agora
                 </span>
               </div>
@@ -83,7 +83,7 @@ const CTA: React.FC = () => {
             </div>
             
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-b from-primary-500/20 to-accent-500/20 rounded-2xl blur-xl opacity-75" />
+              <div className="absolute inset-0 bg-accent-500/20 rounded-2xl blur-xl opacity-75" />
               <div className="relative bg-white backdrop-blur-sm rounded-2xl border border-gray-200 hover:border-primary-500/30 transition-all duration-500 hover:shadow-xl hover:shadow-primary-500/10">
                 <iframe
                   src="https://typebot.co/ag-ncia-aplica-es-tellcon-systems-1-q4g0pxr"
@@ -108,7 +108,7 @@ type BenefitCardProps = {
 const BenefitCard: React.FC<BenefitCardProps> = ({ icon, title, description }) => {
   return (
     <div className="group flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 transition-colors duration-300">
-      <div className="bg-gradient-to-br from-primary-500/20 to-accent-500/20 p-2 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+      <div className="bg-primary-500/20 p-2 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
         <div className="text-primary-400 group-hover:text-accent-400 transition-colors">
           {icon}
         </div>
