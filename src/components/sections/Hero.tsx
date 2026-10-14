@@ -62,7 +62,6 @@ const Hero: React.FC = () => {
             Transforme seu negócio com IA
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-3xl mx-auto">
           <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto">
             Soluções de IA e automação humanizada que geram resultados reais, reduzem custos e aumentam a produtividade do seu negócio.
           </p>
@@ -91,7 +90,6 @@ const Hero: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="flex items-center gap-4 p-6 rounded-2xl bg-dark-800/50 border border-dark-700/50 backdrop-blur-sm">
             <div className="flex items-center gap-4 p-6 rounded-2xl bg-gray-50 border border-gray-200 backdrop-blur-sm">
               <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary-500/20 flex items-center justify-center">
                 <Bot className="w-6 h-6 text-primary-400" />
@@ -139,5 +137,3 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
-  )
-}

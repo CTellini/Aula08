@@ -229,7 +229,7 @@ const Comparison: React.FC = () => {
                       <StatusIcon status={row.freelancers} />
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-white/70">Automatik Labs:</span>
+                      <span className="text-sm text-white/70">Tellcon Systems:</span>
                       <StatusIcon status={row.tellcon} />
                     </div>
                   </div>
